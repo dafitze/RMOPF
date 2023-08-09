@@ -4,7 +4,6 @@
 get_pars = function(chains, simulated_data, width = 0.95){
   # get simulation pars
   pars_sim = get_sim_param(simulated_data, chains)
-
   pars = chains |>
     pivot_longer(cols = everything(), names_to = "param", values_to = "value") |>
     group_by(param) |>
