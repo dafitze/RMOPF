@@ -1,5 +1,8 @@
+#' @import ggplot2
+#' @export
 # Custom ggplot theme to make pretty plots
 # Get the font at https://fonts.google.com/specimen/Barlow+Semi+Condensed
+
 theme_clean <- function() {
   theme_minimal() + #base_family = "Barlow Semi Condensed") +
     theme(panel.grid.minor = element_blank(),

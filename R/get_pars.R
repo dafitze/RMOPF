@@ -1,7 +1,7 @@
 #' @import dplyr
 #' @export
 
-get_pars = function(chains, simulated_data, width = 0.95){
+get_pars = function(chains, simulated_data = NA, width = 0.95){
   # get simulation pars
   pars_sim = get_sim_param(simulated_data, chains)
   pars = chains |>
